@@ -24,3 +24,11 @@ print(f"accuracy is:{accuracy}")
 print(f"the loss is: {loss}")
 
 model.save('digits.model')
+
+for x in range(1,5):
+    img = cv.imread(f'{x}.png')[:,:,0]
+    img = np.invert(np.array([img]))
+    prediction = model.predict(img)
+    print(f'the result is: {np.argmax(prediction)}')
+    plt.imshow(img[0],cmap=plt.cm.binary)
+    plt.show()
