@@ -1,0 +1,1 @@
+this is a simple digit recogntion model using tensorflow. it has high accuracy (>98%). taking a .png files. the attached pictures are just a test and it was made using painter (not the best!). 
